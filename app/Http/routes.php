@@ -112,9 +112,11 @@ Route::get('api/artikel/detail/{slug}',function($slug)
 						'error_code'=>404,
 						'name'=>'artikel_notfound',
 						'msg'=>'Artikel Not Found');
-		return Response::json($data,200);
+			return Response::json($data,200);
+		
 		}else{
-		return Response::json($arr,200);
+
+			return Response::json($arr,200);
 		}
 });
 
