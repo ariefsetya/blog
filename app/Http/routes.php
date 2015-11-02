@@ -98,7 +98,6 @@ Route::get('api/artikel/all',function ()
 Route::get('api/artikel/detail/{slug}',function($slug)
 {
 	$key = \App\Posts::where('slug',$slug)->first();
-		
 		$arr = array(
 			'slug'=>$key['slug'],
 			'isi'=>$key['isi'],
