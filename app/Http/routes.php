@@ -108,8 +108,6 @@ Route::get('api/artikel/detail/{slug}',function($slug)
 			'sampul'=>url('images/'.$key['sampul']),
 			'judul'=>$key['judul']
 		);
-
-
 		if(sizeof($key)==0){
 			$data = array('status'=>"Error",
 						'error_code'=>404,
